@@ -1,0 +1,7 @@
+{
+    "require": {
+        "nesbot/carbon": "^2.58",
+        "lodash-php/lodash-php": "^0.0.7",
+        "phpmailer/phpmailer": "6.8"
+    }
+}

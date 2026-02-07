@@ -1,0 +1,450 @@
+/* SCREEN PREVIEW */
+.cert-container {
+    width: 200mm;
+    min-height: 287mm;
+    margin: 10px auto;
+    padding: 5mm;
+    border: 4px double black;
+    /* DOUBLE LINE BORDER */
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 11pt;
+    position: relative;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TOP INFO BOXES */
+.cert-top-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-bottom: 2mm;
+    z-index: 10;
+}
+
+.top-box-left,
+.top-box-right {
+    min-width: 40mm;
+}
+
+/* WATERMARK */
+.cert-watermark {
+    position: absolute;
+    width: 39mm !important;
+    top: 8% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    opacity: 1 !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+}
+
+.header-watermark {
+    position: absolute;
+    width: 45mm;
+    top: 5mm;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    /* Full opacity top logo as seen in images */
+    z-index: 0;
+}
+
+/* HEADER */
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* TOP BOXES - Voter Precinct & Valid Until */
+.top-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 10mm;
+    margin: 2mm 0;
+    padding: 1mm 0;
+}
+
+.voter-box,
+.valid-box {
+    font-size: 9pt;
+    font-weight: bold;
+    padding: 1mm 3mm;
+    border: 1px solid black;
+}
+
+
+.cert-header-logo {
+    width: 30mm;
+    height: 30mm;
+    object-fit: contain;
+}
+
+.cert-header-center {
+    flex: 1;
+    text-align: center;
+}
+
+.cert-header-center h4 {
+    margin: 0;
+    font-size: 11pt;
+    font-family: "Times New Roman", serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.cert-header-center h3 {
+    margin: 0;
+    font-size: 13pt;
+    font-weight: normal;
+}
+
+.cert-header-center .office-title {
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 1mm;
+}
+
+.bagong-pilipinas-logo {
+    font-size: 9pt;
+    font-weight: bold;
+    color: #4B0082;
+    margin-top: 1mm;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/* MAIN CONTENT */
+.cert-main-box {
+    padding: 3mm 4mm;
+    flex-grow: 1;
+    z-index: 5;
+    position: relative;
+    border: 1px solid black;
+}
+
+.cert-title {
+    text-align: center;
+    margin-bottom: 5mm;
+    margin-top: 5mm;
+}
+
+.cert-title h1 {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+.cert-title p {
+    font-weight: bold;
+    margin: 1mm 0;
+}
+
+.cert-body {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 11.5pt;
+}
+
+.cert-body p {
+    text-indent: 12mm;
+    margin-bottom: 4mm;
+}
+
+.to-whom {
+    font-weight: bold;
+    margin-bottom: 5mm;
+    display: block;
+}
+
+.fill-data {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fill-blank {
+    border-bottom: 1px solid black;
+    padding: 0 2mm;
+}
+
+
+/* SIGNATURE BLOCK */
+.signature-block {
+    text-align: right;
+    margin-top: 10mm;
+    margin-right: 15mm;
+    z-index: 10;
+}
+
+.signature-block .sig-name {
+    font-size: 13pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+
+.signature-block .sig-title {
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.seal-warning {
+    color: red !important;
+    font-style: italic;
+    font-size: 8pt;
+    margin-top: 2mm;
+    margin-right: -10mm;
+    display: block;
+    text-align: right;
+}
+
+
+/* OFFICIALS SECTION (BOTTOM) */
+.officials-section-boxed {
+    border: 1px solid black;
+    padding: 2mm;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 2mm;
+    margin-top: auto !important;
+    z-index: 10;
+    background: white;
+}
+
+.officials-section-boxed *,
+.signature-block * {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+.captain-section {
+    width: 48mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+    text-align: center !important;
+    flex-shrink: 0;
+    font-size: 7pt;
+    line-height: 1.1;
+}
+
+.captain-section p,
+.captain-section div,
+.captain-section span {
+    text-align: center !important;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.captain-photo {
+    width: 30mm !important;
+    height: 30mm !important;
+    border: 1px solid black;
+    margin-top: 5mm !important;
+    margin-bottom: 4mm !important;
+    overflow: hidden;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+}
+
+.captain-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.captain-name {
+    margin: 0;
+    font-size: 6pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+
+.captain-title {
+    margin: 0 0 1mm 0;
+    font-size: 12pt !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.captain-section .label {
+    margin: 0.5mm 0 0 0 !important;
+    font-weight: bold;
+    font-size: 9pt;
+    text-align: center !important;
+}
+
+.captain-section .value {
+    margin: 0;
+    font-weight: normal;
+    font-size: 7pt;
+    text-align: center !important;
+}
+
+.captain-section .value-inline {
+    font-weight: normal;
+    text-align: center !important;
+    display: block;
+}
+
+
+.contact-details p {
+    margin: 0 0 1.5mm 0;
+    font-weight: normal;
+}
+
+.contact-details b {
+    font-weight: bold;
+}
+
+
+
+.officials-grid {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3mm;
+}
+
+.officials-row {
+    display: flex;
+    justify-content: center;
+    gap: 4mm;
+}
+
+.official-card {
+    text-align: center;
+    font-size: 6pt;
+    width: 30mm;
+    overflow: hidden;
+}
+
+.official-card img {
+    width: 18mm;
+    height: 22mm;
+    border: 1px solid black;
+    margin-bottom: 1mm;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.official-card .name {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 6pt;
+    white-space: nowrap;
+    text-decoration: none !important;
+}
+
+.official-card .pos {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 9pt !important;
+}
+
+
+.business-footer-note {
+    font-size: 9pt;
+    font-weight: bold;
+    margin-top: 5mm;
+}
+
+/* ===============================
+   BARANGAY CERTIFICATE PRINT FIX
+   SINGLE PAGE A4 – FINAL VERSION
+   =============================== */
+
+/* ===============================
+   BARANGAY CERTIFICATE PRINT FIX
+   DYNAMIC SIZE – FINAL VERSION
+   =============================== */
+
+@media print {
+
+    /* Lock viewport to strict dimensions provided by inline styles */
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: white;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Hide everything except certificate */
+    body>*:not(.cert-container) {
+        display: none !important;
+    }
+
+    /* Certificate container – adapts to injected size */
+    .cert-container {
+        margin: 0 !important;
+        padding: 1mm !important;
+        border: 4px double black !important;
+        box-sizing: border-box !important;
+        background: white !important;
+        position: relative !important;
+        overflow: hidden !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    /* Preserve internal layouts */
+    .cert-header,
+    .top-boxes,
+    .officials-row,
+    .officials-section-boxed {
+        display: flex !important;
+    }
+
+    .officials-grid {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Prevent officials section from pushing page */
+    .officials-section-boxed {
+        margin-top: auto !important;
+    }
+
+    /* Lock image sizes (prevents reflow → page 2) */
+    img {
+        max-height: 100%;
+    }
+
+    .official-card img {
+        width: 18mm !important;
+        height: 22mm !important;
+        object-fit: cover !important;
+    }
+
+    .captain-photo {
+        width: 30mm !important;
+        height: 30mm !important;
+        margin-top: 5mm !important;
+        margin-bottom: 4mm !important;
+    }
+
+    /* Signature block */
+    .signature-block {
+        display: block !important;
+    }
+}
